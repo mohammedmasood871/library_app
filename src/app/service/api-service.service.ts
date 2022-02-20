@@ -9,7 +9,7 @@ export class ApiServiceService {
   constructor(private http: HttpClient) { }
 
   getBooks(value:any){
-    return this.http.get(`http://openlibrary.org/search/authors.json?q=${value}`)
+    return this.http.get(`https://openlibrary.org/search/authors.json?q=${value}`)
   }
 
   booksDetail(value:any){
